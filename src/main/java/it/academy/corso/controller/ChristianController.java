@@ -16,7 +16,7 @@ public class ChristianController {
     @GetMapping("/chris")
     public ResponseEntity<Map<String,String>> chris (){
         Map <String,String> out = new HashMap<>();
-        out.put("Message","Christian");
+        out.put("Message","Chris");
         return new ResponseEntity<>(out, HttpStatus.OK);
     }
 
