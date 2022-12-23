@@ -19,4 +19,10 @@ public class ChristianController {
         out.put("Message","Christian");
         return new ResponseEntity<>(out, HttpStatus.OK);
     }
+
+    @GetMapping("/chris2")
+    public ResponseEntity<String> chris2 (){
+        String message = "Ciao, sono Chris ";
+        return new ResponseEntity<>(message, HttpStatus.OK);
+    }
 }
